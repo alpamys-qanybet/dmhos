@@ -1,0 +1,96 @@
+html {
+	overflow-x:hidden;
+	-webkit-font-smoothing:antialiased;
+}
+
+body {
+	font-family:Roboto, Arial, sans-serif;
+	color:#808080;
+	font-size:15px;
+	line-height:24px;
+	font-weight:300;
+}
+
+.wrapper {
+	width: 100% !important;
+	height: 100vh;
+}
+
+.nav {
+	background-color: blue;
+	height: 100vh;
+	/*padding: 0 !important;*/
+}
+
+.nav ul {
+	padding: 0;
+}
+
+.nav ul li {
+	list-style-type: none;
+	border: 1px solid black;
+	padding: 20px;
+}
+
+.nav ul li.active {
+	background-color: grey;
+}
+
+.header {
+	height: 10vh;
+}
+
+.content {
+	background-color: grey;
+	height: 80vh;
+    overflow-y: auto;
+}
+
+.content::-webkit-scrollbar {
+    width: 60px;
+}
+.content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.content::-webkit-scrollbar-thumb {
+  background-color: #3cb0fd;
+  outline: 1px solid #3498db;
+}
+
+.footoer {
+	height: 10vh;
+}
+
+.clock {
+	padding-top: 3px;
+	height: 45px;
+	line-height: 45px;
+	font-size: 30px;
+}
+
+.flag-list {
+    /*width: 10%;*/
+    /*display: block;*/
+    float: right;
+}
+
+.flag-list .flag-item {
+    margin: 10px;
+}
+
+.flag-list .flag-item img {
+    height: 45px;
+}
+
+.flag-list .flag-item img:hover {
+    cursor: pointer;
+}
+
+.flag-item:hover .img-wrap {
+    background-color: black;
+}
+
+.flag-item:hover img {
+    opacity: 0.7;
+}
